@@ -3,8 +3,6 @@
 #include "ui_login.h"
 
 #include <QMessageBox>
-#include <QTimer>
-#include <QProcess>
 #include <QTextEdit>
 
 
