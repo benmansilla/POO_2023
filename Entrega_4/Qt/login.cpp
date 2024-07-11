@@ -109,7 +109,7 @@ void Login::login_slot_validar_con_API()
 
 void Login::weather_slot_validar_con_API()
 {
-    QString weather_url = "https://api.openweathermap.org/data/2.5/weather?lat=-31.420082&lon=-64.188774&appid=e8764325548bedbb4c1c79da96558946&units=metric&lang=es&mode=html";
+    QString weather_url = "https://api.openweathermap.org/data/2.5/weather?lat=-31.420082&lon=-64.188774&appid={API_KEY}&units=metric&lang=es&mode=html";
     weather_manager->get(QNetworkRequest(QUrl(weather_url)));
 
     qDebug() << "Solicitud de weather enviada";
